@@ -28,32 +28,27 @@
         <article class="card">
           <div class="card-body">
             <h2>Contact Us</h2>
-            <p>3300 Highway 146, Suite 60<br />Seabrook, TX 77586</p>
+            <p>3300 Bayport Blvd<br />Seabrook, TX 77586</p>
             <p>(212) 555-1212</p>
             <p>Mon–Thu: 11am–9pm<br />Fri–Sat: 11am–10pm<br />Sun: 12pm–8pm</p>
           </div>
         </article>
 
-        <article class="card">
-          <div class="card-body">
-            <h2>Send a Message</h2>
-            <form class="contact-form">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" />
-
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="Your email" />
-
-              <label for="message">Message</label>
-              <textarea id="message" rows="6" placeholder="How can we help?"></textarea>
-
-              <button type="submit" class="btn btn-primary form-btn">Send Message</button>
-            </form>
-          </div>
-        </article>
-      </div>
-    </div>
-  </main>
+      <form 
+        class="contact-form"
+        action="https://formspree.io/f/xrerpjev"
+        method="POST"
+        >
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+        
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+        
+        <button type="submit" class="btn btn-primary form-btn">Send Message</button>
+      </form>
   
     <section class="location-section">
       <div class="container">
