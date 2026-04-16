@@ -3,36 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | My Practice Site</title>
-  <meta name="description" content="Contact page for my practice website." />
+  <title>DutchmanGrill | Contact</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>My Practice Site</h1>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="container nav">
+      <a class="logo" href="index.html">Dutchman Grill & Oyster bar</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
+      <a class="btn btn-primary" href="contact.html">Order Online</a>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Contact</h2>
-    <p>Email: you@example.com</p>
-    <p>Instagram: @yourname</p>
+  <main class="section">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="contact-grid">
+        <article class="card">
+          <div class="card-body">
+            <h2>Visit Us</h2>
+            <p>3300 Highway 146, Suite 60<br />Seabrook, TX 77586</p>
+            <p>(212) 555-1212</p>
+            <p>Mon–Thu: 11am–9pm<br />Fri–Sat: 11am–10pm<br />Sun: 12pm–8pm</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h2>Send a Message</h2>
+            <form class="contact-form">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Your email" />
+
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="How can we help?"></textarea>
+
+              <button type="submit" class="btn btn-primary form-btn">Send Message</button>
+            </form>
+          </div>
+        </article>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 My Practice Site</p>
+      <p>© 2026 Dutchman Grill & Oyster Bar</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>

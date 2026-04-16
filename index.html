@@ -3,47 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Practice Site</title>
-  <meta name="description" content="A simple practice website built by me." />
+  <title>DutchmanGrill | Home</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>My Practice Site</h1>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="container nav">
+      <a class="logo" href="index.html">Dutchman Grill & Oyster bar</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <a class="btn btn-primary" href="contact.html">Order Online</a>
     </div>
   </header>
 
   <main>
-    <section class="hero container">
-      <h2>Hello, I’m building my first website</h2>
-      <p>
-        This is my practice site. I’m using HTML, CSS, JavaScript, Git, and GitHub.
-      </p>
-      <a class="button" href="about.html">Learn more</a>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Fresh Mexican Food</span>
+          <h1>Bold flavors, family vibes, and easy online ordering.</h1>
+          <p>
+            Welcome to El Rancho Grill. This practice site is built to feel like a real
+            restaurant website with a strong hero section, food photos, and clear action buttons.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="menu.html">View Menu</a>
+            <a class="btn btn-secondary" href="about.html">Our Story</a>
+          </div>
+        </div>
+        <div class="card hero-card">
+          <img
+            src="https://images.unsplash.com/photo-1565299585323-38174c4a6471?auto=format&fit=crop&w=1200&q=80"
+            alt="Restaurant platter"
+          />
+        </div>
+      </div>
     </section>
 
-    <section class="container">
-      <h3>What this site is for</h3>
-      <p>
-        I’m practicing web development so I can build a website for a small business.
-      </p>
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80"
+            alt="Restaurant interior"
+          />
+          <div class="card-body">
+            <h2>Warm and welcoming</h2>
+            <p>
+              A family-friendly spot with fast service, fresh ingredients, and classic dishes.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1582234372722-50d7ccc30ebd?auto=format&fit=crop&w=1200&q=80"
+            alt="Mexican food"
+          />
+          <div class="card-body">
+            <h2>Fan favorites</h2>
+            <p>
+              Tacos, fajitas, enchiladas, and house specials made to order every day.
+            </p>
+            <a class="btn btn-secondary" href="menu.html">See the menu</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Customer favorites</h2>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=900&q=80" alt="Tacos" />
+          <img src="https://images.unsplash.com/photo-1604467715878-83e57e8bc129?auto=format&fit=crop&w=900&q=80" alt="Fajitas" />
+          <img src="https://images.unsplash.com/photo-1628294896516-0e9f29f3c2e0?auto=format&fit=crop&w=900&q=80" alt="Drink" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What guests are saying</h2>
+        <div class="reviews-grid">
+          <article class="card">
+            <div class="card-body">
+              <div class="stars">★★★★★</div>
+              <p>Great food, quick service, and generous portions.</p>
+              <strong>Maria R.</strong>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <div class="stars">★★★★★</div>
+              <p>The fajitas were excellent and the staff was super friendly.</p>
+              <strong>James T.</strong>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <div class="stars">★★★★★</div>
+              <p>Perfect place for dinner with family and friends.</p>
+              <strong>Alyssa D.</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <h2>Ready to eat?</h2>
+        <p>Browse the menu or contact us for catering and pickup orders.</p>
+        <div class="hero-actions center">
+          <a class="btn btn-primary" href="menu.html">View Menu</a>
+          <a class="btn btn-secondary light" href="contact.html">Contact Us</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 My Practice Site</p>
+      <p>© 2026 Dutchman Grill & Oyster Bar</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>

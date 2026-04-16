@@ -3,40 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | My Practice Site</title>
-  <meta name="description" content="About this practice website." />
+  <title>DutchmanGrill | About</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>My Practice Site</h1>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="container nav">
+      <a class="logo" href="index.html">Dutchman Grill & Oyster bar</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <a class="btn btn-primary" href="contact.html">Order Online</a>
     </div>
   </header>
 
-  <main class="container">
-    <h2>About</h2>
-    <p>
-      This page is here so I can practice building multi-page websites.
-    </p>
-    <p>
-      My next goal is to make this layout look better on mobile and add images.
-    </p>
+  <main class="section">
+    <div class="container">
+      <h1>About Us</h1>
+      <div class="about-grid">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+            alt="Restaurant team"
+          />
+        </div>
+        <div>
+          <p>
+            El Rancho Grill started as a family-owned neighborhood restaurant focused on fresh
+            ingredients, bold flavors, and a welcoming atmosphere.
+          </p>
+          <p>
+            This page is a good place to tell the restaurant story, talk about the owners,
+            mention local roots, and explain what makes the food special.
+          </p>
+          <p>
+            Keep this page personal. Add photos of the team, dining room, and signature dishes.
+          </p>
+        </div>
+      </div>
+
+      <section class="section-inner">
+        <h2>Why people come back</h2>
+        <div class="three-col">
+          <article class="card">
+            <div class="card-body">
+              <h3>Fresh ingredients</h3>
+              <p>Prepared daily with quality ingredients and classic recipes.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Fast service</h3>
+              <p>Quick lunch, easy pickup, and friendly staff.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Family atmosphere</h3>
+              <p>A warm and welcoming place for everyone.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 My Practice Site</p>
+      <p>© 2026 Dutchman Grill & Oyster Bar</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
